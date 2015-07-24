@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to @post }
       format.js
+      format.atom
     end
   end
 
