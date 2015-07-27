@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>QuickBlog</title>
+  <title>Paju Blog</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= auto_discovery_link_tag(:atom, posts_path(:atom)) %>
 </head>
 <body>
-<%= render partial: 'layouts/header' %>
+<div id="fb-root"></div>
 
-<div id="main">
-  <%= yield %>
+<div id="wrapper">
+  <div id="header">
+    <%= render partial: 'layouts/header' %>
+    </div>
+  <div id="content">
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
+  <div id="footer">
+    <%= render partial: 'layouts/footer' %>
+  </div>
 </div>
-<%= render partial: 'layouts/footer' %>
 </body>
 </html>
