@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  attr_accessor :post, :posts
 
   def index
     @posts = Post.published
@@ -14,7 +15,7 @@ class PostsController < ApplicationController
     @post = Post.published.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html.truncate(160) # show.html.erb
       format.json { render json: @post }
     end
   end
