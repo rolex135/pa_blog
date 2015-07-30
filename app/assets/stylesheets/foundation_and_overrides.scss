@@ -1400,7 +1400,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
- $topbar-bg-color: #C4DEFF;
+ $topbar-bg-color: #53A9EA;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1419,8 +1419,8 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg: $topbar-bg;
- $topbar-link-bg-hover: #708090;
+ $topbar-link-bg: #FFFFE0;
+ $topbar-link-bg-hover: black;
 // $topbar-link-bg-color-hover: $charcoal;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
@@ -1493,3 +1493,4 @@ $include-html-global-classes: $include-html-classes;
 body{
   background-color: #FFFFE0;
 }
+
