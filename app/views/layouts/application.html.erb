@@ -18,18 +18,18 @@
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div id="wrapper">
+
   <div id="header">
     <%= render partial: 'layouts/header' %>
     </div>
-  <div id="content">
+  <div id="content"><div id="wrapper">
     <div id="main">
       <%= yield %>
     </div>
-  </div>
+  </div></div>
   <div id="footer">
     <%= render partial: 'layouts/footer' %>
-  </div>
+
 </div>
 </body>
 </html>
