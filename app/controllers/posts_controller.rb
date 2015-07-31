@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   attr_accessor :post, :posts
 
   def index
-    @posts = Post.published
+    @posts = Post.order("created_at").reverse_order.published
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,7 +15,7 @@ class PostsController < ApplicationController
     @post = Post.published.find(params[:id])
 
     respond_to do |format|
-      format.html.truncate(160) # show.html.erb
+      format.html # show.html.erb
       format.json { render json: @post }
     end
   end

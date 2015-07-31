@@ -1,4 +1,5 @@
-<h2><%= link_to_unless_current post.title, post %></h2>
-<%= sanitize(post.content, :tags=>[]).truncate(160, :separator => " ").html_safe %>
+<h2><%= link_to_unless_current post.title, post %>
+  <%= sanitize(post.markAvatar) %></h2>
+<%= sanitize(post.content, :tags=>[]).truncate(300, :separator => " ").html_safe %>
 <%= link_to 'read more', post %>
 
