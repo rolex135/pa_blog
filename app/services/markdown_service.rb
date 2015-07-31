@@ -13,9 +13,8 @@ class MarkdownService
     @markdown.render(text)
   end
 
-  def imageRender(url)
-   # @markdown.render("![alt](#{url})")
-    @markdown.render("<img src='#{url}' alt='Alt' height='400' width='400'>")
+  def imageRender(url,width,height)
+    @markdown.render("<img src='#{url}' alt='Alt' height='#{height}' width='#{width}'>")
 
   end
 end
