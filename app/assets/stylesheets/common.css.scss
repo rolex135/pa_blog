@@ -20,7 +20,7 @@ div#main{
 div#header{
   height:200px;
   width: 100%;
-    h1 {
+    .name h1 {
       text-align: center;
       font-size: 50px;
       margin: 20px 0 0 0;
@@ -31,7 +31,6 @@ div#header{
   }
   .abo{
     margin: 5px 15px 15px 15px;
-
   }
 
 .top-bar{
@@ -290,5 +289,17 @@ Media Queries
   .cool_btn1{
     width:90px;
     height:90px;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 870px) {
+  .top-bar{
+    height: 300px;
+  }
+  .cool_btn1{
+    margin-top: 100px;
+  }
+  #wrapper{
+    margin-top: 100px;
   }
 }
